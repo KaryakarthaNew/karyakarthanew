@@ -1,0 +1,107 @@
+.saved-jobs-container{
+    background-image: linear-gradient(#c1c7ee,#ffffff);
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
+
+.saved-jobs-container h1{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.saved-jobs-ul-container{
+    width:80%;
+    /* border:2px solid red; */
+    padding: 20px;
+}
+
+.saved-jobs-card-container{
+    list-style-type: none;
+    display:flex;
+    margin-bottom:15px;
+    background-color: white;
+    border-radius: 8px;
+    padding: 20px;
+    /* border:2px solid blue; */
+    width:100%;
+}
+
+.saved-job-company-logo{
+    width:40px;
+    height:40px
+}
+
+.saved-jobcard-details-container{
+    flex-grow: 1;
+    margin-left: 20px;
+}
+
+.saved-jobcard-details-container h5{
+    color:#505054
+}
+
+.saved-jobcard-details-container p{
+    color:rgb(88, 85, 85)
+}
+
+.saved-jobcard-btn-savedicon{
+    display:flex;
+    align-items:center;
+}
+
+.saved-apply-button{
+    margin-right: 30px;
+    box-shadow: 0 1px 1px 1px rgb(27, 27, 245);
+    background-color:transparent;
+    border:none;
+    padding:8px 25px 8px 25px;
+    border-radius: 5px;
+    font-weight: 700;
+}
+
+.saved-jobcard-shareicon-n-time{
+    display:flex;
+    flex-direction: column;
+    justify-content:space-between;
+    align-items:flex-end;
+}
+
+.saved-jobcard-shareicon-n-time p {
+    font-weight: 700;
+    color:rgb(145, 142, 142)
+}
+
+.save-icon-blue{
+    width:40px;
+    height:40px
+}
+
+
+@media screen and (max-width:756px){
+    .saved-jobs-ul-container{
+        width:100%;
+    }
+
+    .saved-apply-button{
+        margin-right: 15px;
+        font-size:12px;
+        padding:5px 10px 5px 10px;
+        font-weight: 700;
+    }
+
+    .saved-job-company-logo{
+        width:30px;
+        height:30px
+    }
+
+    .saved-jobcard-shareicon-n-time p {
+        font-size:12px;
+        color:rgb(145, 142, 142)
+    }
+
+    .save-icon-blue{
+        width:30px;
+        height:30px
+    }
+}

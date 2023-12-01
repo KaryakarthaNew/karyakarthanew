@@ -1,0 +1,78 @@
+.fulltime-job-main-container{
+    background-image: linear-gradient(#c1c7ee,#ffffff);
+    /* border: 2px solid red; */
+    width: 100%;
+    height: 91vh;
+    display: flex;
+    flex-wrap: wrap;
+ }
+ 
+ .side-bar{
+    width: 100%;
+    height: 100%;
+ 
+ }
+ @media screen and (min-width:768px) {
+    .side-bar{
+       max-width: 450px;
+    }
+ }
+ .job-detail-view{
+    height: 98%;
+    width: 500px;
+    flex-grow: 1;
+    padding: 20px;
+    margin: 10px;
+    background-color: transparent;
+    /* border: 3px solid green; */
+    background-color: white;
+    overflow-y: scroll;
+    border-radius: 20px;
+ }
+ /* .job-detailed-card{
+    background-color: white;
+    padding: 20px;
+    border-radius: 20px;
+    max-height: 100vh;
+    overflow-y: scroll;
+ } */
+ .jobs-ul-container{  
+    padding: 10px;
+    overflow-y: scroll;
+    height: 100%;
+    /* border: 2px solid green; */
+ }
+ .top-bar{
+    display: flex;
+    align-items: center;
+    widows: 100%;
+    justify-content: space-between;
+ }
+ .company-name-paragraph{
+    margin: 0px;
+ }
+ .description-para{
+    text-align: start;
+    font-weight: 400;
+ }
+ .lpa{
+    font-weight: bold;
+    color: #5c5c5c
+ }
+ 
+ 
+ ::-webkit-scrollbar {
+    width: 5px;
+  }
+  
+ ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+  
+ ::-webkit-scrollbar-thumb {
+    background: rgb(9, 9, 59);
+  }
+  
+ ::-webkit-scrollbar-thumb:hover {
+    background: blue;
+  }

@@ -1,0 +1,47 @@
+.Welcome-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+ }
+ 
+ 
+ .logo-image{
+    width:200px;
+    height:50px;
+ }
+ 
+ .d-welcome-container{
+    background-color:white;
+    background-size:cover;
+    width: 100%;
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content:space-between;
+    max-height:90vh;
+ }
+ 
+ .d-content-container{
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content:center;
+ }
+ 
+ .desktop-logo-img{
+    width:400px;
+    height:90px;
+    max-width: 100%;
+    padding: 10px;
+ }
+ 
+ .top-image-container{
+    width: 100%;
+    height:232px;
+ }
+
+ .bottom-image-container{
+    width: 100%;
+    rotate: 180deg;
+ }
