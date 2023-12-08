@@ -1,9 +1,13 @@
+import React from "react";
+import Header from "../Header";
+
 const Account = () => {
-    return(
-        <div>
-            <h1>Account</h1>
-        </div>
-    )
-}
+  return (
+    <>
+      <Header />
+      <div>Welcome to Account Page!!</div>
+    </>
+  );
+};
 
 export default Account;

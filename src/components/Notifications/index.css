@@ -1,0 +1,106 @@
+.bg {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: linear-gradient(to bottom, #d59eff, #ffffff);
+}
+
+.notifications-card {
+    background-color: white;
+    width: 80vw;
+    border-radius: 15px;
+    padding-top: 5px;
+    margin-top: 20px;
+    margin-top: 10px;
+    list-style-type: none;
+    align-content: center;
+    justify-content: center;
+}
+
+.notification-status {
+    color: grey;
+    font-size: 14px;
+    padding: 5px;
+}
+
+.jobPost-description {
+    color: grey;
+    font-size: 16px;
+    padding-left: 10px;
+}
+
+.notifications-companyName {
+    font-size: 18px;
+    color: grey;
+    padding-left: 10px;
+    padding-top: 0px;
+}
+
+.company-logo {
+    width: 50px;
+    height: 50px;
+    align-items: end;
+    justify-content: end;
+    padding-left: 30px;
+    padding-top: 20px;
+    column-gap: 20px;
+}
+
+.list-items {
+    list-style-type: none;
+}
+
+.isActiveImage {
+    width: 20px;
+    height: 20px;
+    padding-top: 20px;
+    padding-right: 30px;
+}
+
+.card-container {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: between;
+}
+
+.job-role {
+    font-size: 20px;
+    padding-left: 10px;
+    padding-bottom: 05px;
+}
+
+.notifications-heading {
+    font-size: 26px;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.activeStatusContainer {
+    justify-content: right;
+    text-align: end;
+    align-items: end;
+    padding-right: 20px;
+}
+
+.content-container {
+    flex-grow: 2;
+}
+
+.dateOfApplied {
+    justify-items: right;
+}
+
+@media (min-width:768px) {
+    .content-container {
+        flex-direction: row;
+    }
+    .role-status-container {
+        display: flex;
+        gap: 6px;
+    }
+    .status {
+        padding-top: 18px;
+    }
+}
