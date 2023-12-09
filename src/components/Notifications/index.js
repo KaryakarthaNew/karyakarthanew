@@ -1,6 +1,9 @@
 import React from "react";
 import "./index.css";
 import Header from "../Header";
+import Footer from "../Footer";
+import { FaCircle } from "react-icons/fa";
+import { FaCircleDot } from "react-icons/fa6";
 
 const isActiveImage =
   "https://res.cloudinary.com/dgupqp35x/image/upload/v1701572841/m9btenwp6kzvianlkfxz.png";
@@ -180,56 +183,41 @@ const Notifications = () => {
   return (
     <>
       <Header />
-      <div className="bg text-center">
-        <h3 className="notifications-heading"> Notifications </h3>
-        <ul className="list-items">
+      <div className="notifications-container">
+        <h1 className="notifications-heading"> Notifications </h1>
+        <ul className="notifications-ul-container">
           {saveddataArray.map((eachItem) => (
             <li className="notifications-card" key={eachItem.id}>
-              <div className="card-container">
-                <div>
-                  <img
-                    src={eachItem.companyLogo}
-                    className="company-logo"
-                    alt={eachItem.companyName}
-                  />
+              <div className="notifi-logo-container">
+                <img
+                  src={eachItem.companyLogo}
+                  className="notifi-company-logo"
+                  alt={eachItem.companyName}
+                />
+              </div>
+              <div className="noti-card-content-container">
+                <div className="role-status-container">
+                  <h1> {eachItem.role} </h1>
+                  <p>{eachItem.status}</p>
                 </div>
-                <div className="content-container">
-                  <div className="role-status-container">
-                    <h1 className="job-role"> {eachItem.role} </h1>
-                    {eachItem.status && (
-                      <span className="notification-status status">
-                        {eachItem.status}
-                      </span>
-                    )}
-                  </div>
-                  <p className="notifications-companyName">
-                    {eachItem.companyName}
-                  </p>
-                  <p className="jobPost-description">{eachItem.description}</p>
-                </div>
-                <div className="activeStatusContainer">
-                  {eachItem.isActive && (
-                    <div>
-                      {eachItem.isActive ? (
-                        <>
-                          <img
-                            src={isActiveImage}
-                            className="isActiveImage"
-                            alt="Active Notification"
-                          />
-                          <p className="dateOfApplied">
-                            {eachItem.dateOfApplied}
-                          </p>
-                        </>
-                      ) : null}
-                    </div>
-                  )}
-                </div>
+                <p className="notifications-companyName">
+                  {eachItem.companyName}
+                </p>
+                <p className="jobPost-description">{eachItem.description}</p>
+              </div>
+              <div className="activeStatusContainer">
+                {eachItem.isActive ? (
+                  <FaCircle size={15} color="blue" />
+                ) : (
+                  <FaCircle size={15} color="white" />
+                )}
+                <p>{eachItem.dateOfApplied}</p>
               </div>
             </li>
           ))}
         </ul>
       </div>
+      <Footer />
     </>
   );
 };

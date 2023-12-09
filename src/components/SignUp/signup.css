@@ -3,6 +3,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  height: 92vh;
   background-image: linear-gradient(#c1c7ee, #ffffff);
 }
 
@@ -40,7 +41,7 @@
 .signup-inputs-and-continuegoogle-container {
   display: flex;
   width: 100%;
-  border: 2px solid red;
+  /* border: 2px solid red; */
   padding: 10px;
   align-items: center;
   margin-top: 18px;
@@ -49,15 +50,15 @@
 /* Form Container */
 .signup-form-container {
   flex-grow: 1;
-  border: 1px solid green;
+  /* border: 1px solid green; */
 }
 
 .sp-fullname-input-container {
   display: flex;
   align-items: center;
   width: 100%;
-  border: 2px solid black;
-  margin-bottom: 15px;
+  /* border: 2px solid black; */
+  margin-bottom: 25px;
 }
 
 .signup-lables {
@@ -69,32 +70,38 @@
 .signup-inputs {
   width: 80%;
   margin-left: 20px;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid rgb(162, 159, 159);
 }
 
 .signup-inputs::placeholder {
-  color: black;
+  color: rgb(157, 157, 240);
+  font-size: 17px;
 }
 
 .signup-inputs-p-tags {
-  font-size: 10px;
+  font-size: 11px;
   color: rgb(52, 51, 51);
+  margin-left: 10px;
+  padding-top: 3px;
 }
 
 .sp-email-input-container {
   display: flex;
-  align-items: center;
+  /* align-items: center; */
   width: 100%;
-  border: 2px solid black;
-  margin-bottom: 15px;
+  /* border: 2px solid black; */
+  margin-bottom: 10px;
 }
 
 .signup-email-input-and-ptag {
-  border: 1px solid red;
+  /* border: 1px solid red; */
   width: 80%;
   margin-left: 20px;
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
+  justify-content: center;
   padding: 0;
 }
 
@@ -105,22 +112,22 @@
 
 .sp-password-input-container {
   display: flex;
-  align-items: center;
+  /* align-items: center; */
   width: 100%;
-  border: 2px solid black;
+  /* border: 2px solid black; */
   margin-bottom: 15px;
 }
 
 .sp-mobile-input-container {
   align-items: center;
   width: 100%;
-  border: 2px solid black;
-  margin-bottom: 15px;
+  /* border: 2px solid black; */
+  margin-bottom: 20px;
 }
 
 .terms-text-signup {
   color: black;
-  font-size: 12px;
+  font-size: 13px;
 }
 
 .terms-and-conditions-text {
@@ -141,7 +148,7 @@
 
 .horizontal-line-sp {
   height: 100px;
-  width: 1px;
+  width: 2px;
   background-color: #3c3a3a;
   margin: 0 10px;
 }
@@ -168,7 +175,7 @@
   flex-direction: column;
   align-items: center;
   flex-grow: 1;
-  border: 1px solid rebeccapurple;
+  /* border: 1px solid rebeccapurple; */
 }
 
 .google-button-container-sp {
@@ -214,6 +221,18 @@
   .google-button-container-sp {
     width: 100%;
   }
+
+  .signup-email-input-and-ptag {
+    display: flex;
+  }
+
+  .sp-email-input-container .signup-lables {
+    margin-top: 14px;
+  }
+
+  .sp-password-input-container .signup-lables {
+    margin-top: 14px;
+  }
 }
 
 @media screen and (max-width: 676px) {
@@ -238,7 +257,7 @@
   }
 
   .sign-up-card-container {
-    width: 100%;
+    width: 95%;
   }
 
   .signup-lables {

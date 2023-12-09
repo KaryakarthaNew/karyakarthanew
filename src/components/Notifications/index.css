@@ -1,106 +1,127 @@
-.bg {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-image: linear-gradient(to bottom, #d59eff, #ffffff);
-}
-
-.notifications-card {
-    background-color: white;
-    width: 80vw;
-    border-radius: 15px;
-    padding-top: 5px;
-    margin-top: 20px;
-    margin-top: 10px;
-    list-style-type: none;
-    align-content: center;
-    justify-content: center;
-}
-
-.notification-status {
-    color: grey;
-    font-size: 14px;
-    padding: 5px;
-}
-
-.jobPost-description {
-    color: grey;
-    font-size: 16px;
-    padding-left: 10px;
-}
-
-.notifications-companyName {
-    font-size: 18px;
-    color: grey;
-    padding-left: 10px;
-    padding-top: 0px;
-}
-
-.company-logo {
-    width: 50px;
-    height: 50px;
-    align-items: end;
-    justify-content: end;
-    padding-left: 30px;
-    padding-top: 20px;
-    column-gap: 20px;
-}
-
-.list-items {
-    list-style-type: none;
-}
-
-.isActiveImage {
-    width: 20px;
-    height: 20px;
-    padding-top: 20px;
-    padding-right: 30px;
-}
-
-.card-container {
-    display: flex;
-    flex-direction: row;
-    gap: 20px;
-    justify-content: between;
-}
-
-.job-role {
-    font-size: 20px;
-    padding-left: 10px;
-    padding-bottom: 05px;
+.notifications-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 30px;
+  background-image: linear-gradient(#ccccff, #ffffff);
 }
 
 .notifications-heading {
-    font-size: 26px;
-    align-content: center;
-    justify-content: center;
-    text-align: center;
+  font-weight: bold;
+  padding-bottom: 20px;
+}
+
+.notifications-ul-container {
+  width: 80%;
+  padding: 20px;
+  border: 2px solid black;
+}
+
+.notifications-card {
+  list-style-type: none;
+  display: flex;
+  margin-bottom: 15px;
+  background-color: white;
+  border-radius: 8px;
+  padding: 20px;
+  border: 2px solid blue;
+  width: 100%;
+}
+
+.notifi-logo-container {
+  border: 1px solid red;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  width: 10%;
+  padding-top: 8px;
+}
+
+.role-status-container {
+  display: flex;
+  align-items: center;
+  padding-top: 0;
+}
+
+.noti-card-content-container {
+  border: 2px solid red;
+  flex-grow: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 80%;
+}
+
+.notification-status {
+  color: grey;
+  font-size: 14px;
+  padding: 5px;
+}
+
+.jobPost-description {
+  color: grey;
+  font-size: 16px;
+}
+
+.notifications-companyName {
+  font-size: 19px;
+  font-weight: bold;
+  color: grey;
+  padding-top: 0;
+}
+
+.notifi-company-logo {
+  width: 35px;
+  height: 35px;
+}
+
+.role-status-container h1 {
+  font-weight: bold;
+  font-size: 25px;
+}
+
+.role-status-container p {
+  font-size: 15px;
+  color: grey;
+  font-weight: 600;
+  padding-left: 10px;
+  padding-top: 10px;
+}
+
+.jobPost-description {
+  font-weight: 500;
 }
 
 .activeStatusContainer {
-    justify-content: right;
-    text-align: end;
-    align-items: end;
-    padding-right: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid red;
+  width: 10%;
+  padding-top: 10px;
 }
 
-.content-container {
-    flex-grow: 2;
+.activeStatusContainer p {
+  font-weight: bold;
+  color: rgb(104, 102, 102);
 }
 
-.dateOfApplied {
-    justify-items: right;
-}
+@media (max-width: 768px) {
+  .activeStatusContainer {
+    align-items: flex-end;
+  }
 
-@media (min-width:768px) {
-    .content-container {
-        flex-direction: row;
-    }
-    .role-status-container {
-        display: flex;
-        gap: 6px;
-    }
-    .status {
-        padding-top: 18px;
-    }
+  .role-status-container h1 {
+    font-size: 18px;
+  }
+
+  .notifi-company-logo {
+    width: 30px;
+    height: 30px;
+  }
+
+  .activeStatusContainer p {
+    font-size: 13px;
+  }
 }

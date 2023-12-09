@@ -44,6 +44,7 @@ const Login = () => {
   const changeEmail = (event) => {
     setEmail(event.target.value);
   };
+
   const changePassword = (event) => {
     setPass(event.target.value);
   };
@@ -51,6 +52,7 @@ const Login = () => {
   const navigateToForgot = (event) => {
     navigate("/forgot");
   };
+
   const goToSignUp = () => {
     navigate("/signup");
   };
