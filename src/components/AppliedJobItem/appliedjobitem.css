@@ -1,0 +1,119 @@
+.job-card {
+  list-style-type: none;
+  display: flex;
+  background-color: white;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+.status-container {
+  max-width: 30px;
+  min-height: 100%;
+  background-color: rgb(178, 240, 178);
+  border: 3px solid rgb(0, 193, 64);
+  display: inline;
+  justify-content: center;
+  align-items: center;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+.status-text {
+  transform: rotate(-90deg);
+  width: 100%;
+  margin-top: 100px;
+  font-weight: 500;
+}
+@media screen and (min-width: 768px) {
+  .status-text {
+    margin-top: 70px;
+  }
+}
+.logo-container {
+  background-color: rgb(56, 254, 126);
+  padding: 10px;
+  width: 50px;
+}
+.content-container {
+  background-color: rgb(58, 75, 201);
+  padding: 10px;
+  width: 100%;
+  background-color: white;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+.share-option-container {
+  padding: 0px;
+  /* border: 2px solid green; */
+}
+
+.logo-image {
+  width: 60px;
+  height: 60px;
+  padding: 10px;
+}
+.role-para {
+  margin: 0px;
+  /* font-size: 17px; */
+  font-weight: bold;
+}
+.companyname-para {
+  margin: 0px;
+  font-size: 15px;
+  font-weight: 500;
+  color: rgb(168, 168, 168);
+}
+.description-para {
+  margin: 0px;
+  font-size: 15px;
+  font-weight: bold;
+  color: rgb(111, 107, 107);
+}
+.lpa-para {
+  margin: 0px;
+  font-size: 12px;
+  font-weight: bold;
+  color: rgb(150, 148, 148);
+}
+.jobType-para {
+  margin: 0px;
+  font-size: 12px;
+  font-weight: bold;
+  color: rgb(8, 7, 7);
+  padding: 5px 5px;
+  background-color: rgb(154, 156, 157);
+  width: fit-content;
+  border-radius: 5px;
+}
+.appliedDate-para {
+  margin: 0px;
+  margin-top: 10px;
+  font-size: 12px;
+  font-weight: bold;
+  color: rgb(150, 148, 148);
+}
+.company-role-name-save-share-container {
+  display: flex;
+  justify-content: space-between;
+  /* border: 2px solid red; */
+}
+.share-options-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 50px;
+}
+.job-type-and-lpa {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+@media screen and (max-width: 756px) {
+  .logo-image {
+    width: 50px;
+    height: 50px;
+  }
+
+  .description-para {
+    font-size: 12px;
+  }
+}

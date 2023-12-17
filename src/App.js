@@ -10,6 +10,7 @@ import FulltimeJobs from "./components/fulltimeJobs";
 import SavedJobs from "./components/SavedJobs";
 import { AuthProvider } from "./AuthContext";
 import Account from "./components/Account";
+import NewAccount from "./components/NewAccount/account";
 import Notifications from "./components/Notifications";
 import AppliedJobs from "./components/AppliedJobs";
 import ProtectedRoute from "./components/ProtectedRoute";
@@ -22,7 +23,7 @@ function App() {
           <Route exact path="/" element={<Welcome />} />
           <Route exact path="/home" element={<WWOhomepage />} />
           <Route exact path="/login" element={<Login />} />
-          <Route exact path="/account" element={<Account />} />
+          <Route exact path="/account" element={<NewAccount />} />
           <Route exact path="/notifications" element={<Notifications />} />
           <Route exact path="/forgot" element={<ForgetMailPage />} />
           <Route exact path="/full-time-jobs" element={<FulltimeJobs />} />
