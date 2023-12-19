@@ -9,7 +9,6 @@ import WWOhomepage from "./components/WWOhomepage";
 import FulltimeJobs from "./components/fulltimeJobs";
 import SavedJobs from "./components/SavedJobs";
 import { AuthProvider } from "./AuthContext";
-import Account from "./components/Account";
 import NewAccount from "./components/NewAccount/account";
 import Notifications from "./components/Notifications";
 import AppliedJobs from "./components/AppliedJobs";
